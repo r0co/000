@@ -73,8 +73,9 @@ URL: http://192.168.124.128:80/index.php
 
 # Q&A
 
-> Q: 我需要安装什么包？
-> A: requests是必须的，如果需要使用socks4/5代理的话还需要安装pysocks
+Q: 我需要安装什么包？
+
+A: 必须安requests，如果需要使用socks4/5代理的话还需要安装pysocks
 
  
 
