@@ -32,7 +32,7 @@ http://192.168.124.128:8081/
 
 Payload内容为xml，举例如下：
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
     <payload>
