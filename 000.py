@@ -78,6 +78,6 @@ if __name__ == '__main__':
     for finished in as_completed(task_list):
         res = finished.result()
         if res:
-            print("\r[+] {} is vulnerable.".format(res))
+            print("\r[+] {} is vulnerable.          ".format(res))
         finished_count += 1
         showProcessBar(finished_count, total_task)
